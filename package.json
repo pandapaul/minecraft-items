@@ -4,7 +4,7 @@
   "description": "A Minecraft items list",
   "main": "index.js",
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tap test/*/*.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "devDependencies": {
     "objectify-array": "^1.0.0",
     "standard": "^10.0.2",
-    "superagent": "^3.5.2"
+    "superagent": "^3.5.2",
+    "tap": "^10.3.2"
   }
 }

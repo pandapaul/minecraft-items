@@ -1,0 +1,27 @@
+{
+  "name": "minecraft-items",
+  "version": "0.0.1",
+  "description": "A Minecraft items list",
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pandapaul/minecraft-items.git"
+  },
+  "keywords": [
+    "minecraft",
+    "item",
+    "item",
+    "list",
+    "id",
+    "name"
+  ],
+  "author": "Paul Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pandapaul/minecraft-items/issues"
+  },
+  "homepage": "https://github.com/pandapaul/minecraft-items#readme"
+}

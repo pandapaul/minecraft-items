@@ -5,7 +5,7 @@ const someItems = [
   {
     type: 101,
     meta: 2,
-    name: 'Hoo Mjuu',
+    name: 'Hoo Mjuu The Torrent',
     text_type: 'hoo_mjuu'
   },
   {

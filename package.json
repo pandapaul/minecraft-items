@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/pandapaul/minecraft-items#readme",
   "devDependencies": {
-    "objectify-array": "^1.0.0",
+    "objectify-array": "pandapaul/objectify-array#keyname-priority",
     "standard": "^10.0.2",
     "superagent": "^3.5.2",
     "tap": "^10.3.2"

@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/pandapaul/minecraft-items#readme",
   "devDependencies": {
+    "fs-extra": "^3.0.1",
     "objectify-array": "^1.0.1",
     "standard": "^10.0.2",
     "superagent": "^3.5.2",

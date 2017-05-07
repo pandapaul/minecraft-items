@@ -1,7 +1,10 @@
 const fetchItems = require('./fetchItems')
 const mapFetchedItems = require('./mapFetchedItems')
 const objectifyMappedItems = require('./objectifyMappedItems')
+const writeJsonFiles = require('./writeJsonFiles')
+const path = require('path')
 
 module.exports = fetchItems()
 .then(mapFetchedItems)
 .then(objectifyMappedItems)
+.then(items => writeJsonFiles(items, path.join(__dirname, '../data')))

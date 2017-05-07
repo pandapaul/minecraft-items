@@ -4,8 +4,7 @@
   "description": "A Minecraft items list",
   "main": "index.js",
   "scripts": {
-    "build": "node build",
-    "test": "tap test/*/*.js"
+    "test": "tap test/*/*.js test/*.js"
   },
   "repository": {
     "type": "git",

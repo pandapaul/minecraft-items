@@ -13,10 +13,13 @@
   "keywords": [
     "minecraft",
     "item",
-    "item",
+    "block",
     "list",
     "id",
-    "name"
+    "name",
+    "meta",
+    "type",
+    "subtype"
   ],
   "author": "Paul Anderson",
   "license": "MIT",

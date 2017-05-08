@@ -22,3 +22,7 @@ tap.test('should be able to get an item by string type & subType', t => {
 tap.test('should be able to get an item by name', t => {
   testItem(t, minecraftItems.get('Stone'), 'Stone')
 })
+
+tap.test('should be able to get an item by name with case insensitivity', t => {
+  testItem(t, minecraftItems.get('stoNe'), 'Stone')
+})

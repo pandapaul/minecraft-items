@@ -23,6 +23,7 @@ tap.test('mapFetchedItems should map fetched items', t => {
   t.equal(mappedItems[0].type, someItems[0].type, 'maintain type property')
   t.equal(mappedItems[0].meta, someItems[0].meta, 'maintain meta property')
   t.equal(mappedItems[0].name, someItems[0].name, 'maintain name property')
+  t.equal(mappedItems[0].lowercasedName, someItems[0].name.toLowerCase(), 'lowercase name property separately')
   t.equal(mappedItems[0].id, `${someItems[0].type}:${someItems[0].meta}`, 'map type:meta to id')
   t.end()
 })

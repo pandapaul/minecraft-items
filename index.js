@@ -11,7 +11,7 @@ const get = (key) => {
     return itemsById[key]
   }
 
-  return itemsByName[key]
+  return itemsByName[key.toLowerCase()]
 }
 
 module.exports = {

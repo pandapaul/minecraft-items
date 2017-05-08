@@ -31,5 +31,6 @@ tap.test('objectifyMappedItems should create two sets of objects keyed by id and
   t.equal(objectified.byName.daishiki.id, someMappedItems[1].id, 'objects in byName should maintain id')
   t.equal(objectified.byName.daishiki.meta, someMappedItems[1].meta, 'objects in byName should maintain meta')
   t.equal(objectified.byName.daishiki.name, someMappedItems[1].name, 'objects in byName should maintain name')
+  t.type(objectified.byName.daishiki.lowercasedName, 'undefined', 'objects in byName should drop lowercasedName')
   t.end()
 })

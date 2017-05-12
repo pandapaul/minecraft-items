@@ -28,10 +28,13 @@
   },
   "homepage": "https://github.com/pandapaul/minecraft-items#readme",
   "devDependencies": {
+    "adm-zip": "^0.4.7",
     "fs-extra": "^3.0.1",
     "objectify-array": "^1.0.1",
     "standard": "^10.0.2",
+    "stream-to-promise": "^2.2.0",
     "superagent": "^3.5.2",
+    "superagent-binary-parser": "^1.0.1",
     "tap": "^10.3.2"
   }
 }

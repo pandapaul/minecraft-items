@@ -33,7 +33,8 @@ Returns data about the matching item.  For example, here's a Jungle Boat
   id: '446:0',
   name: 'Jungle Boat',
   meta: 0,
-  type: 446
+  type: 446,
+  icon: 'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgBAMAAACBVGfHAAAALVBMVEUAAAAoHgqLaCVHLx9mRCyHWTp2TjOacVRSNyS4h2RpThyIZSSOZEJsUR12WB9O084eAAAAAXRSTlMAQObYZgAAAI9JREFUKFOl0TEZwzAMhFFROAqm8FMQBVMIBVMQBVEoBVMQhVAIhi7J0Mbp0tv0vtN0ZmYm2Wfu0ATAI6iBe++dBxC4u2+9D1ZwntLWxxpwd3e1H3B+NMVgDYl7ROgl9ABJRARqmlpDJQFZ2o+pBRiZSVVpHlflC4xKshLNY1+DkRSYac59DXYtoGuxG/yZN7Ieb5H4FFC4AAAAAElFTkSuQmCC'
 }
 ```
 
@@ -60,6 +61,12 @@ For case insensitive (but otherwise exact) name match. i.e. `get('diamond')` is 
 Type: `number`
 
 Describes a subtype of Minecraft item. Though many items do not have meta values (`meta: 0`), lots of items do use the meta value to describe themselves as variants on a theme.  For example, Dirt is item 3 while Coarse Dirt is item 3:1.
+
+#### icon
+
+Type: `string`
+
+A PNG image for the item as a base64-encoded string.
 
 
 ## Special Thanks

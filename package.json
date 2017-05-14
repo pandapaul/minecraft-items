@@ -1,6 +1,6 @@
 {
   "name": "minecraft-items",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Get Minecraft items by id, type, or name.",
   "main": "index.js",
   "scripts": {

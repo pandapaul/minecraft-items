@@ -4,6 +4,10 @@ const tap = require('tap')
 const testItem = (test, item, name) => {
   test.type(item, 'object')
   test.equal(item.name, name)
+  test.notEqual(typeof item.id, 'undefined', 'items should have an id property')
+  test.notEqual(typeof item.type, 'undefined', 'items should have a type property')
+  test.notEqual(typeof item.meta, 'undefined', 'items should have a meta property')
+  test.notEqual(typeof item.icon, 'undefined', 'items should have a icon property')
   test.end()
 }
 

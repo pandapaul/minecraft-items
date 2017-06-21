@@ -39,3 +39,10 @@ tap.test('should be able to get all items', t => {
   t.equal(allItems, itemsById)
   t.end()
 })
+
+tap.test('should be able to get all items keyed by name', t => {
+  const allItems = minecraftItems.getAll({ by: 'name' })
+  t.type(allItems, 'object')
+  t.equal(allItems, itemsByName)
+  t.end()
+})

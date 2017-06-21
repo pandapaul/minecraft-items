@@ -14,7 +14,10 @@ const get = (key) => {
   return itemsByName[key.toLowerCase()]
 }
 
-const getAll = () => {
+const getAll = ({ by = 'id' } = {}) => {
+  if (by === 'name') {
+    return itemsByName
+  }
   return itemsById
 }
 

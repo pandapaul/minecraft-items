@@ -74,6 +74,20 @@ A PNG image for the item as a base64-encoded string.
 This package is built from data provided by http://minecraft-ids.grahamedgecombe.com/, so thanks Graham. :)
 
 
+### getAll( options )
+
+Returns data about every item as a hash
+
+#### options
+
+##### by
+
+Type: `string`
+Default: `'id'`
+
+Name of field by which to key the items. May be either `'id'` or `'name'`.
+
+
 ## License
 
 MIT

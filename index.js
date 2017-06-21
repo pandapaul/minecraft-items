@@ -14,6 +14,11 @@ const get = (key) => {
   return itemsByName[key.toLowerCase()]
 }
 
+const getAll = () => {
+  return itemsById
+}
+
 module.exports = {
-  get
+  get,
+  getAll
 }

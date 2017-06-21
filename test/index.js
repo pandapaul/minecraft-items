@@ -1,5 +1,7 @@
 const minecraftItems = require('../')
 const tap = require('tap')
+const itemsById = require('../data/itemsById.json')
+const itemsByName = require('../data/itemsByName.json')
 
 const testItem = (test, item, name) => {
   test.type(item, 'object')
@@ -29,4 +31,11 @@ tap.test('should be able to get an item by name', t => {
 
 tap.test('should be able to get an item by name with case insensitivity', t => {
   testItem(t, minecraftItems.get('stoNe'), 'Stone')
+})
+
+tap.test('should be able to get all items', t => {
+  const allItems = minecraftItems.getAll()
+  t.type(allItems, 'object')
+  t.equal(allItems, itemsById)
+  t.end()
 })

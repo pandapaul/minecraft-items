@@ -46,3 +46,35 @@ tap.test('should be able to get all items keyed by name', t => {
   t.equal(allItems, itemsByName)
   t.end()
 })
+
+tap.test('should be able to get items matching a numeric type', t => {
+  const stoneThings = minecraftItems.find(1)
+  t.true(Array.isArray(stoneThings))
+  t.equal(stoneThings[0].name, 'Stone')
+  t.true(stoneThings.length > 1)
+  t.end()
+})
+
+tap.test('should be able to get items matching an incomplete id', t => {
+  const stoneThings = minecraftItems.find('1:')
+  t.true(Array.isArray(stoneThings))
+  t.equal(stoneThings[0].name, 'Stone')
+  t.true(stoneThings.length > 1)
+  t.end()
+})
+
+tap.test('should be able to get items matching an id', t => {
+  const concreteThings = minecraftItems.find('251:1')
+  t.true(Array.isArray(concreteThings))
+  t.equal(concreteThings[0].name, 'Orange Concrete')
+  t.true(concreteThings.length > 1)
+  t.end()
+})
+
+tap.test('should be able to get items matching a string', t => {
+  const stoneThings = minecraftItems.find('stone')
+  t.true(Array.isArray(stoneThings))
+  t.equal(stoneThings[0].name, 'Stone')
+  t.true(stoneThings.length > 1)
+  t.end()
+})

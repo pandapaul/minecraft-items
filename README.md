@@ -17,9 +17,14 @@ $ npm install --save minecraft-items
 ```js
 const minecraftItems = require('minecraft-items')
 
+// Get an item
 const diamond = minecraftItems.get(264)
 const mooshroomSpawnEgg = minecraftItems.get('383:96')
 const grass = minecraftItems.get('grass')
+
+// Find items
+const stoneVariants = minecraftItems.find(1)
+const allThingsStone = minecraftItems.find('stone')
 ```
 
 
@@ -67,6 +72,17 @@ Describes a subtype of Minecraft item. Though many items do not have meta values
 Type: `string`
 
 A PNG image for the item as a base64-encoded string.
+
+
+### find( key )
+
+Returns an array of items matching the provided `key`.
+
+#### key
+
+Type: `string` or `number`
+
+A key by which to search the lists of items. May be a partial `name`, `type`, or `id`.
 
 
 ### getAll( options )

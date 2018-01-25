@@ -24,7 +24,7 @@ const grass = minecraftItems.get('grass')
 
 // Find items
 const stoneVariants = minecraftItems.find(1)
-const allThingsStone = minecraftItems.find('stone')
+const swords = minecraftItems.find('sword')
 ```
 
 

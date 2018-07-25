@@ -32,12 +32,12 @@ const someObjectifiedItems = {
 
 tap.test('writeJsonFiles should create two json files where one contains the items by id and the other by name', t => {
   return writeJsonFiles(someObjectifiedItems, path.join(__dirname, 'data'))
-  .then(() => fs.readJson(path.join(__dirname, 'data/itemsById.json')))
-  .then(writtenById => {
-    t.same(writtenById, someObjectifiedItems.byId)
-  })
-  .then(() => fs.readJson(path.join(__dirname, 'data/itemsByName.json')))
-  .then(writtenByName => {
-    t.same(writtenByName, someObjectifiedItems.byName)
-  })
+    .then(() => fs.readJson(path.join(__dirname, 'data/itemsById.json')))
+    .then(writtenById => {
+      t.same(writtenById, someObjectifiedItems.byId)
+    })
+    .then(() => fs.readJson(path.join(__dirname, 'data/itemsByName.json')))
+    .then(writtenByName => {
+      t.same(writtenByName, someObjectifiedItems.byName)
+    })
 })

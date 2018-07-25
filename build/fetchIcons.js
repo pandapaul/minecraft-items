@@ -11,14 +11,14 @@ module.exports = () => {
   const icons = {}
 
   return superagent.get('http://minecraft-ids.grahamedgecombe.com/items.zip')
-  .buffer()
-  .parse(binaryParser)
-  .then(res => res.body)
-  .then(buffer => new AdmZip(buffer))
-  .then(zip => zip.getEntries())
-  .then(entries => entries.forEach(entry => {
-    const itemId = pathToId(entry.entryName)
-    icons[itemId] = entry.getData().toString('base64')
-  }))
-  .then(() => icons)
+    .buffer()
+    .parse(binaryParser)
+    .then(res => res.body)
+    .then(buffer => new AdmZip(buffer))
+    .then(zip => zip.getEntries())
+    .then(entries => entries.forEach(entry => {
+      const itemId = pathToId(entry.entryName)
+      icons[itemId] = entry.getData().toString('base64')
+    }))
+    .then(() => icons)
 }

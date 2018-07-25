@@ -10,7 +10,7 @@ module.exports = Promise.all([
   fetchItems(),
   fetchIcons()
 ])
-.then(([items, icons]) => [mapFetchedItems(items), icons])
-.then(combineItemsAndIcons)
-.then(objectifyMappedItems)
-.then(items => writeJsonFiles(items, path.join(__dirname, '../data')))
+  .then(([items, icons]) => [mapFetchedItems(items), icons])
+  .then(combineItemsAndIcons)
+  .then(objectifyMappedItems)
+  .then(items => writeJsonFiles(items, path.join(__dirname, '../data')))
